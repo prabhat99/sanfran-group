@@ -1,0 +1,101 @@
+{%  extends 'base.html'%}
+{% load static %}
+{% block content%}
+
+
+<style>
+.sub-title {
+    background-color: #333;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+    padding: 180px 0 100px;
+    margin-bottom: 10px;
+}
+.sub-title-inner h2.page-leading {
+    color: #ffffff;
+}
+.sub-title-inner h2.page-leading {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+.down-brochure a {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Montserrat;
+    display: -webkit-inline-box;
+    background: #132f56;
+    padding: 0px 10px 0px 0px;
+    margin-bottom: 35px;
+}
+.down-brochure a i {
+    font-size: 25px;
+    background: #f8b347;
+    padding: 10px 10px;
+}
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+.down-brochure a:hover {
+    color: #ffffff;
+}
+a:hover, .widget.widget_rss ul li a {
+    color: #e8141b;
+}
+
+</style>
+
+<section id="main">
+    <div class="sub-title" style="background-image:url({%static '/static/img/download-brochure/download-brochure-top-banner.jpg'%});background-size: cover;background-position: 50% 50%;">
+        <div class="sub-title-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="page-leading">Download Brochure</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="team">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="down-brochure" style="text-align: center;">
+                            <img src="{%static '/static/img/download-brochure/brochure-img-01.jpg'%}" alt="brochure-img-01" class="img-responsive" style="margin-top: 25px;">
+                            <h4 style="color: #f8ae34;text-align: center;padding-bottom: 15px;">SANFRAN ASHOK CITY BROCHURE</h4>
+                            <a target="_blank" href="/static/img/download-brochure/Sanfran-Brochure.pdf" title="">
+                                <i class="fa fa-download"></i>
+                                 Download Here
+                            </a>
+                        </div>
+                    </div>
+                <div class="col-sm-4">
+                    <div class="down-brochure" style="text-align: center;">
+    <img src="{%static '/static/img/download-brochure/brochure-img-03.jpg'%}" alt="brochure-img-01" class="img-responsive" style="margin-top: 25px;"><h4 style="color: #f8ae34;text-align: center;padding-bottom: 15px;">SANFRAN ASHOK CITY M VILLA FLOOR PLAN</h4>
+    <a target="_blank" href="{%static '/static/img/download-brochure/Type-M-Villas-1-1120x691.jpg'%}" title="">
+    <i class="fa fa-download"></i>
+    Download Here
+    </a></div></div><div class="col-sm-4"><div class="down-brochure" style="text-align: center;">
+    <img src="{%static '/static/img/download-brochure/brochure-img-02.jpg'%}" alt="brochure-img-01" class="img-responsive" style="margin-top: 25px;"><h4 style="color: #f8ae34;text-align: center;padding-bottom: 15px;">SANFRAN ASHOK CITY FLOOR PLAN</h4>
+    <a target="_blank" href="{%static '/static/img/download-brochure/G-2.jpg'%}" title="">
+    <i class="fa fa-download"></i>
+    Download Here
+    </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+
+{% endblock%}

@@ -1,0 +1,179 @@
+{%  extends 'base.html'%}
+{% load static %}
+{% block content%}
+
+<style >
+    .decorate-img{
+    
+}
+
+
+.sub-title {
+    background-color: #333;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+    padding: 180px 0 100px;
+    margin-bottom: 10px;
+}
+.sub-title-inner h2.page-leading {
+    color: #ffffff;
+}
+.sub-title-inner h2.page-leading {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+.testmonialsec.sec-padding {
+    background: #fff;
+}
+
+    
+
+    .overview h3 {
+        color: #fbaf3f;
+        margin: 0px 0px 0px -5px;
+        padding: 0px;
+        font-size: 75px;
+        display: none;
+        font-weight: normal;
+        line-height: 70px;
+        text-align:left;
+        text-transform: uppercase;
+        font-family: 'Montserrat-Bold', sans-serif;
+    }
+    
+    .overview hr {
+        height: 3px;
+        width: 165px;
+        display: none;
+        border-top: 0px;
+        background: #fbaf3f;
+        margin: 3px 0px 25px 2px;
+    }
+    
+    .overview p {
+        color: #717070;
+        margin: 0px 0px 15px;
+        padding: 0px;
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: normal;
+        text-align: justify;
+        text-align-last:left;
+        font-family: 'Montserrat-SemiBold_1', sans-serif;
+    }
+    
+    .overview a {
+        color: #ffffff;
+        margin: 15px 5px 30px;
+        padding: 20px 30px;
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 10px;
+        background: #132f56;
+        display: inline-block;
+        border-radius: 50px;
+        text-align:center;
+        text-decoration:none;
+        text-transform: uppercase;
+        font-family: 'Montserrat-SemiBold_1', sans-serif;
+    }
+    
+    .overview a:hover {
+        color: #fff;
+        background: #fbaf3f;
+        text-decoration:none;
+    }
+    
+    .decor-text{
+        font-size:138px;
+        transition:all ease .35s;
+        font-weight:700;
+        letter-spacing: 0px;
+        position:absolute;
+        left: calc(50% - 143px);
+        text-shadow:0 0 10px rgba(0,0,0,.3);
+        font-family:poppins,sans-serif;
+        line-height:1;
+        color:#fff;
+        text-align:center;
+        z-index: 1;
+        padding-top: 45px;
+        margin-top: 0px;
+        text-transform:uppercase;
+    }
+    .img-responsive{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<section id="main">
+    <div class="sub-title" style="background-image: url({%static './img/objectivesoverview_364479.jpg' %});background-size: cover;   
+    background-position: 50% 50%;"> 
+        
+        <div class="sub-title-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="page-leading">Overview</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="content" class="site-content" role="main">
+            <div id="post-1634" class="post-1634 page type-page status-publish hentry">
+                <div class="entry-content">
+                    <div class="vc_row wpb_row vc_row-fluid">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_raw_code wpb_content_element wpb_raw_html">
+                                        <div class="wpb_wrapper">
+                                            <div class="container" style="margin-top: 35px;">
+                                                <div class="row">
+                                                    <div class="decor-text">Overview</div>
+                                                    <div class="col-lg-6">
+                                                        <div class="decorate-img" >
+                                                            <img src="{%static './img/overview-img.jpg' %}" alt="" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="overview">
+                                                        <h3>Overview</h3>
+                                                        <hr>
+                                                        <div style="margin-top: 175px;">
+                                                        <p><b>Sanfran Group</b> believes in giving glorious experiences to the customers by creating quality construction, modern designs and timely delivery which makes it one of the finest real estate companies. The company emphasizes on building homes which are comparable with global standards, world-class infrastructure with luxurious amenities.
+                                                        </p>
+                                                        <p>The company is professionally managed leading real estate company inspired by the objective to provide perfect residential and commercial areas with recreational facilities. The aim is to provide a better tomorrow to the people by upgrading the quality of life and living standards.</p>
+                                                        <p>We believe in building a new home, a dream home which is handled with the expertise to offer the best to the customers, from pen to paper, from blueprint to reality. We build homes that match your dream.</p>
+                                                        <p><b>The company is ISO certified and RERA approved which makes customers entrust on us.</b></p>
+
+                                                        <a href="{%url 'contact-us'%}">Contact Us</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+{% endblock%}

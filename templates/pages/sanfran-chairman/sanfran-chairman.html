@@ -1,0 +1,113 @@
+{%  extends 'base.html'%}
+{% load static %}
+{% block content%}
+
+<style>
+
+.sub-title-inner h2.page-leading {
+    color: #ffffff;
+}
+
+.sub-title-inner h2.page-leading {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    font-size: 36px;
+}
+.chairman-profie {
+    text-align: center;
+    background: #ffffff url("{%static '/static/img/sanfran-chairman/sketch.jpg'%}") bottom right no-repeat;
+    padding: 25px 0px 25px;
+}
+section{
+    display: block;
+}
+.chairman-profie .sanfran img {
+    margin-top: 0px;
+    display: -webkit-inline-box;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.chairman-profie .sanfran h4 {
+    color: #fbaf3f;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 5px;
+    margin: 0px 0px 15px;
+}
+.chairman-profie .sanfran span {
+    color: #9a9a9a;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Montserrat;
+    margin: 0px;
+}
+.chairman-profie .sanfran p {
+    color: #9a9a9a;
+    font-size: 15px;
+    text-align: justify;
+    text-align-last: left;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 18px 0px;
+}
+</style>
+
+
+<section id="main">
+    <div class="sub-title" style="background-image:url({%static './computer-2048166_1920.jpg'%});background-size: cover;background-position: 50% 50%;">
+        <div class="sub-title-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 class="page-leading">Chairman Message</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="chairman">
+        <section class="chairman-profie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="sanfran">
+                            <img src="{%static '/static/img/sanfran-chairman/Pandiyan_Ji.png'}" alt="Pandiyan_Ji" class="img-responsive">
+                            <h4>MR. M.B PANDIYAN</h4>
+                            <span>Chairman &amp; WTD, Sanfran Group</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="sanfran">
+                            <p>As we celebrate the start of 2019, I sincerely thank our customers, vendors, stakeholders and team Sanfran. These are momentous times with many structural changes happening in Real Estate in
+                            particular and in the economy and business environment in general. Under such a situation, I hope to make 2019 a year in which Sanfran Group can make solid advancements towards growth, in line with its 2018 achievements.</p>
+                            <p>I am happy to see the incredibly talented and dedicated people at Sanfran working day and night as a team for achieving growth and customer satisfaction. We at Sanfran, have set benchmarks for others on delivery of projects on time, thus gaining the trust of our valued customers. Sanfran firmly believes that client once made is as close as our family member and this; we have proved by taking special care of our existing customers. Sanfran with its presence in 11 important cities of the country (Ahmedabad, Gurgaon, Jhansi, Lucknow, Noida, Orai, Allahabad, Farrukhabad, Vizag, Raipur, and Ranchi) is truly, a PAN India player but is still busy in laying the groundwork for rapid expansion. Sanfran has expanded to Dubai and with its passion to build its name and the expertise, it wants to enter the U.A. E Real Estate market, which would be its another major goal.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="sanfran">
+                            <p><b>Coming to the Real Estate Sector in India...</b><br>RERA is a challenge as well as a bag full of possibilities and opportunities. We at Sanfran are geared up to face the challenges put up by the implementation of RERA and new economy, boldly and cheerfully. Here also we will come up to the expectations of our customers and well-wishers.</p>
+                            <p>On behalf of the Sanfran board, management and staff, I would like to wish our entire stakeholder family, a wonderful and rewarding year ahead. I wish you all a healthy &amp; successful year.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+
+{% endblock%}

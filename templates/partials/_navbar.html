@@ -1,0 +1,213 @@
+ {% load static%}
+
+ <style>
+
+.primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight:700;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+  font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+  padding:0;
+  margin:0;
+}
+
+.primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0;
+}
+
+.primary_nav_wrap ul li:hover > ul
+{
+  display:block;
+}
+
+.primary_nav_wrap ul ul li:hover{
+  background-color: #fbaf3f;
+}
+
+.sanfran-logo{
+  width:80px;
+}
+ </style>
+ 
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" >
+        <div class="container">
+          <a class="navbar-brand" href="{%url 'index'%}">
+            <img src="/static/img/logo.png" class="logo" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse primary_nav_wrap " id="navbarNavAltMarkup">
+            <ul class="navbar-nav" >
+              <li 
+              {% if '/' == request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="{%url 'index'%}">Home</a>
+              </li>
+              <li 
+              {% if 'about' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="{%url 'about'%}">About Us<i class="fa fa-angle-down" style="margin-left: .5em;"></i></a>
+                
+                <ul >
+                  <li><a href="{%url 'overview'%}">OVERVIEW</a></li>
+                  <li><a href="{%url 'our-logo'%}">OUR LOGO</a></li>
+                  <li><a href="{%url 'mission'%}">MISSION</a></li>
+                  <li><a href="{%url 'vision'%}">VISION</a></li>
+                  <li><a href="{%url 'management'%}">MANAGEMENT</a></li>
+                </ul>
+              </li>
+              <li 
+              {% if 'corporate-profile' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="#">Corporate profile<i class="fa fa-angle-down" style="margin-left: .5em;"></i></a>
+                <ul>
+                  <li><a href="{%url 'sanfran-chairman'%}">SANFRAN CHAIRMAN</a></li>
+                  <li><a href="{%url 'sanfran-team'%}">SANFRAN TEAM</a></li>
+                  <li><a href="{%url 'rewards-recognition'%}">REWARDS & RECOGNITION</a></li>
+                  <li><a href="{%url 'milestones'%}">MILESTONES</a></li>
+                </ul>
+              </li>
+              <li 
+              {% if 'projects' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="#">projects<i class="fa fa-angle-down" style="margin-left: .5em;"></i></a>
+                <ul class="ls-style">
+                  <li><a href="{%url 'completed-projects'%}">COMPLETED PROJECTS</a></li>
+                  <li><a href="{%url 'ongoing-projects'%}">ONGOING PROJECTS</a></li>
+                  <li><a href="{%url 'upcoming-projects'%}">UPCOMING PROJECTS</a></li>
+                  <li><a href="{%url 'finance'%}">FINANCE</a></li>
+                </ul>
+              </li>
+              <li 
+              {% if 'media' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="{%url 'media'%}">media<i class="fa fa-angle-down" style="margin-left: .5em;"></i></a>
+                <ul class="ls-style">
+                  <li><a href="#">GALLERY</a></li>
+                  <li><a href="#">PRESS RELEASE</a></li>
+                  <li><a href="#">NEWS MAGAZINE</a></li>
+                  <li><a href="{%url 'download-brochure'%}">DOWNLOAD BROCHURE</a></li>
+                  <li><a href="#">CUSTOMER TESTIMONIALS</a></li>
+                  <li><a href="#">BLOG</a></li>
+                </ul>
+              </li>
+              <li 
+              {% if 'career' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="#">Career<i class="fa fa-angle-down" style="margin-left: .5em;"></i></a>
+                <ul>
+                  <li><a href="{%url 'current-openings'%}">CURRENT OPENINGS</a></li>
+                </ul>
+              </li>
+              <li 
+              {% if 'contact-us' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}
+              >
+                <a class="nav-link" href="{%url 'contact-us'%}">Contact US</a>
+              </li>
+
+            </ul>
+    
+            <ul class="navbar-nav ml-auto">
+              {%if user.is_authenticated %}
+              <li  {% if 'dashboard' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}>
+                <a class="nav-link" href="{%url 'dashboard'%}">
+                  Welcome {{user.username}} (Dashboard)</a>
+              </li>
+
+              <li class="nav-item  mr-3">
+                <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
+                  <i class="fas fa-sign-out-alt"></i>
+                  Logout
+                </a>
+           <form action="{%url 'logout'%}" method="POST" id="logout">
+             {%csrf_token%}
+             <input type="hidden">
+           </form>
+              </li>
+
+              
+              {%else%}
+              <li  {% if 'register' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}>
+                <a class="nav-link" href="{%url 'register'%}">
+                  <i class="fas fa-user-plus"></i> Register</a>
+              </li>
+              <li  {% if 'login' in request.path %}
+              class="nav-item active mr-3"
+              {% else %}
+              class="nav-item  mr-3"
+              {% endif%}">
+                <a class="nav-link" href="{%url 'login'%}">
+                  <i class="fas fa-sign-in-alt"></i>
+    
+                  Login</a>
+              </li>
+              {%endif%}
+            </ul>
+          </div>
+        </div>
+ </nav> 
+ 
+ 

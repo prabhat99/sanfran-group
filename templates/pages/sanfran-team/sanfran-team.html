@@ -1,0 +1,128 @@
+{%  extends 'base.html'%}
+{% load static %}
+{% block content%}
+
+
+<style>
+.sub-title {
+    background-color: #333;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+    padding: 180px 0 100px;
+    margin-bottom: 10px;
+
+}
+.sub-title-inner h2.page-leading {
+    color: #ffffff;
+}
+.sub-title-inner h2.page-leading {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+.sanfran-profie {
+    background: #f9f9f9;
+    margin-bottom: 50px;
+    padding: 50px 0px 25px;
+}
+section{
+    display: block;
+}
+.mentors {
+    color: #122e55;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 0px 0px 30px;
+}
+.pro {
+    float: left;
+    height: 235px;
+    margin-bottom: 35px;
+    padding: 25px 0px 0px;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.sanfran-profie .sanfran h4 {
+    color: #faaf3f;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0px 0px;
+}
+.sanfran-profie .sanfran span {
+    color: #616060;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Montserrat;
+    margin: 0px;
+}
+
+.sanfran-profie .sanfran p {
+    color: #7b7b7b;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 18px 0px;
+}
+.blockquote-reverse, blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-right: 5px solid #eee;
+    border-left: 0;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+}
+.pro:hover p {
+    color: #e0e0e0;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+.sanfran-profie .sanfran p {
+    color: #7b7b7b;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: normal;
+    line-height: 25px;
+    margin: 18px 0px;
+}
+
+</style>
+
+
+<section id="main">
+    <div class="sub-title" style="background-image:url({%static '/static/img/sanfran-team/paper-3213924_1920.jpg'%});background-size: cover;background-position: 50% 50%;"><div class="sub-title-inner"><div class="container"><div class="row"><div class="col-sm-12"><h2 class="page-leading">Sanfran Team</h2></div></div></div></div></div><div id="team"><section class="sanfran-profie" style="background:#ffffff;"><div class="container"><div class="row"><div class="col-sm-12"><h4 class="mentors">Our Guiding Mentors</h4></div></div><div class="row"><div class="pro"><div class="col-sm-2"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-05.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>MR. P.NATH</h4>
+    <span>Director Legal</span><p style="text-align-last:left;">Armed with an extensive corporate experience of 38 years in the legal field, Mr. Nath is having a vast knowledge of Stamp Act and Registration. With such a humongous period of practice in the Civil Court in addressing civil cases of diversified nature, his guidance in the field would surely go a long way in protecting us from unlawful agreements or exercises.</p></div></div></div></div><div class="row"><blockquote class="blockquote-reverse"><div class="pro"><div class="col-sm-2" style="float:right;"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-13.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>MS. UPASANA PANJWANI</h4>
+    <span>Director Overseas</span><p style="text-align-last:right;">An energetic professional, passionate about interior designing and an artist by heart, she has designed a number of known commercial and office spaces at Dubai. She has managed the hospitality sector at Dubai with excellence. She has spearheaded the Kayla Lounge business and has given untiring efforts in raising the business to new heights in Dubai.</p></div></div></div></blockquote></div><div class="row"><div class="pro"><div class="col-sm-2"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-14.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>DR. JAISHREE PRAKASH</h4>
+    <span>Chief Human Resource Officer</span><p style="text-align-last:left;">With an experience spanning over the entire value chain of HR practices, she transcends all the
+    boundaries and conventional business principles to carry forward the legacy of the organization, upholding the core values of business. As a leading light for the organization, she is the backbone of our Human Resource Department. Being a Doctorate from Bareilly University, she has an eye for research. No wonder, she approaches every work with scientific logic.</p></div></div></div></div><div class="row"><blockquote class="blockquote-reverse"><div class="pro"><div class="col-sm-2" style="float:right;"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-06.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>MR. A. NARAYAN, RTD. PCS</h4>
+    <span>CEO, Business Development</span><p style="text-align-last:right;">Having served the government in Provincial Civil Services, he has also extended his services to the Development Authority. Mr. Narayan, now strategically guides us on major proposals in urban policy making. His invaluable experience has enabled us to form a strategic land acquisition policy. His bespoke, focused advice in diverse planning helps us to achieve our professional objectives competitively.</p></div></div></div></blockquote></div><div class="row"><div class="pro"><div class="col-sm-2"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-09.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>MR. RAJESH SHUKLA</h4>
+    <span>Consultant Architect</span><p style="text-align-last:left;">Our lead consultant for architecture in all our objects, Mr. Shukla is an experienced promoter of an architect firm, Quintessence, and is actively involved in diverse Landscape Architecture and Conservation projects, a visiting faculty of SPA in the Department of Landscape Architecture &amp;Conservation. He is also associated with DHV-Haskoning, providing advisory role for various scale projects in India.</p></div></div></div></div><div class="row"><blockquote class="blockquote-reverse"><div class="pro"><div class="col-sm-2" style="float:right;"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-08.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4 style="text-align-last: right;">MR. ANOOP JAUHARY (CA)</h4>
+    <span>Consultant Finance and Business Development</span><p style="text-align-last:right;">Remarkably known CA with a professional experience of over 25 years, Mr. Jauhary thrives on challenges and takes pride in the quality of planning and his efficient dealing in almost all matters related to finance &amp; statutory tax compliance. He is heading our finance activities and statutory compliances.</p></div></div></div></blockquote></div><div class="row"><div class="pro"><div class="col-sm-2"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-10.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>MR. AASHISH TALWAR</h4>
+    <span>Consultant Interior and Civil Work, Dubai</span><p style="text-align-last:left;">Mr. Talwar, a Dubai based Entrepreneur with 23 years of experience into interior designing is now the HOD of our interior designing department. He has the ability to create vision and trust in our team. From site identification through strategic promotion to planning application, his confidence with the right approach is praiseworthy.</p></div></div></div></div><div class="row"><blockquote class="blockquote-reverse"><div class="pro"><div class="col-sm-2" style="float:right;"><div class="left-side">
+    <img src="{%static '/static/img/sanfran-team/Profile-Img-11.jpg'%}" alt="images" class="img-responsive"></div></div><div class="col-sm-10"><div class="sanfran"><h4>MR. I.S. TRIPATHI</h4>
+    <span>Consultant Architect</span><p style="text-align-last: right;">Mr. Tripathi is a brand name in himself in the architecture industry for last 20 Years. With appropriate usage of plans and visualization, this Bachelors in Architecture, IIT Roorkee, has proven his mettle by establishing his own firm in Noida &amp; has been associated with various boastful corporate groups.</p></div></div></div></blockquote></div></div></section></div></section>
+
+{% endblock%}

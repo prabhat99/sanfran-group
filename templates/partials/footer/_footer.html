@@ -1,0 +1,434 @@
+    <!-- Footer -->
+    <!--<footer id="main-footer" class="py-4 bg-primary text-white text-center">
+            Copyright &copy;
+            <span class="year"></span> Sanfran Group
+    </footer> -->
+
+     <!-- 
+}-->
+
+{%load static%}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
+      <style>
+        footer{
+          display: block;
+        }
+
+      
+ h2{
+    position: relative;
+    font-family: 'Praxis LT Pro Regular', sans-serif;
+    font-weight: normal;
+    margin: 0px;
+    background: none;
+    line-height: 1.6em;
+}
+        .sfgcolorborder {
+                background: #f8ae34 none repeat scroll 0 0;
+                display: block;
+                height: 1px;
+                position: relative;
+                width: 200px;
+                margin: 2px 0px 25px 25px;}
+
+                .sfgcolorborder::after {
+    background: #f8ae34 none repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    transform: translate(-50%);
+    width: 50px;
+    top: -2px;
+}
+
+    .footer1 {
+      background: #273238  center center no-repeat;
+      background-image: url("../partials/footer/img/map.png");
+      padding: 50px 0 0;
+      clear: both;
+      background-size: 100%;
+      }
+      .footer1 p,
+.footer1 a,
+.footer1 i {
+  color: #cac8c8;
+  font-size: 13px;
+  text-align: left;  
+}
+.footer1 a:hover {
+    color: #f8ae34;
+    text-decoration: none;
+}
+
+.footer1 ul li {
+    line-height: 20px;
+    margin-top: 5px;
+    font-family: "Praxis LT Pro Regular";
+}
+.footer1 ul li i {
+    margin-right: 5px;
+}
+a{
+  background-color: transparent;
+}
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+  text-decoration: none;
+    cursor: pointer;
+    color: #fbca00;
+}
+.ftlogo {
+    margin: 20px 0;
+    display: block;
+}
+.ftlogo img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border:0;
+}
+
+.ftcontact li {
+    display: table;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.ftcontact li i {
+    color: #f8ae34;
+    float: left;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: left;
+    width: 26px;
+    margin-right: 0;
+}
+.ftcontact li i.fa-envelope-o {
+    font-size: 16px;
+}
+.footersec .social li {
+    display: inline-block;
+}
+
+.footersec .social li a {
+    border: 1px solid #676666;
+    background: transparent;
+    border-radius: 50%;
+    color: #cacfd3;
+    display: inline-block;
+    font-size: 15px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 3px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 35px;
+}
+.footersec .social li a i {
+    margin-right: 0;
+    color: #fff;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fot-sec-title h2 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.4em;
+    letter-spacing: .5px;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.footer-sec.quick-links {
+    padding-left: 25px;
+}
+.footer-sec.latest-project li {
+    float: left;
+    width: 33.33%;
+    padding: 4px;
+    margin: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+.footer-sec.latest-project li:hover img {
+    transform: scale(1.1, 1.1);
+}
+.footer-sec.latest-project li img {
+    width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.footer-sec.latest-project li img {
+    width: 100%;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+.footer-sec.latest-project li a {
+    display: block;
+    overflow: hidden;
+}
+ul, li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.text-left {
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+p {
+    position: relative;
+    line-height: 1.8em;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5d5b5b;
+    text-align: justify;
+    text-align-last: center;
+    font-family: "verdana";
+    padding-bottom: 10px;
+}
+
+.continfo {
+    color: #cac8c8;
+    float: left;
+    font-size: 12px;
+    font-family: "Praxis LT Pro Regular";
+    line-height: 24px;
+    width: calc(100% - 34px);
+}
+.copyright {
+    color: #949393;
+    margin-top: 20px;
+    padding: 20px 0px 0px;
+    background: #19242a;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}.row:after {
+    clear: both;
+}
+      </style>
+
+    </head>
+    <body>
+      <footer class="footer1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="footersec">
+                <div class="fot-sec-title text-left">
+                  <h2>About <span style="color:#f8ae34;">SFG</span>
+                  </h2>
+                  <span class="sfgcolorborder"></span>
+                </div>
+                <a class="ftlogo" href="#">
+                  <img alt="Awesome Image" src="">
+                </a>
+                <p style="text-align-last: left;">Sanfran group a conglomerate of multinational companies. Which operates in real estate, hospitality health..... 
+                  <a href="{%url 'about'%}" style="color:#f8ae34;">Read More</a>
+                </p>
+                <ul class="social">
+                  <li>
+                    <a target="_blank" href="https://www.facebook.com/TheSanfrangroup/">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://twitter.com/sanfransquareg1">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://in.pinterest.com/sanfransquare/topics/">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCiCvqjA15OC-SBjy2w5BmCQ">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-3 col-sm-6">
+              <div class="footersec footer-sec quick-links">
+                <div class="fot-sec-title text-left">
+                  <h2>Short <span style="color:#f8ae34;">Links</span></h2>
+                  <span class="sfgcolorborder"></span>
+                </div>
+                <ul>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{% url 'index'%}">Home</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{% url 'about'%}">About Us</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{%url 'projects'%}">Projects</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{%url 'corporate-profile'%}">corporate-profile</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{%url 'career'%}">Career</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{%url 'media'%}">Media</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{%url 'contact-us'%}">Contact</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-angle-double-right"></i>
+                    <a href="{}">Privacy-Policy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-3  col-sm-6">
+              <div class="footersec footer-sec latest-project">
+                <div class="fot-sec-title text-left">
+                  <h2>Recent <span style="color:#f8ae34;">Works</span></h2>
+                  <span class="sfgcolorborder"></span></div>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img src="{%static '/static/img/project-thumb-1.jpg'%}" alt="image">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./footer/img/project-thumb-2.jpg" alt="image">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./footer/img/project-thumb-3.jpg" alt="image">
+                      </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                      <img src="./footer/img/project-thumb-4.jpg" alt="image">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./footer/img/project-thumb-5.jpg" alt="image">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./footer/img/project-thumb-6.jpg" alt="image"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./footer/img/project-thumb-7.jpg" alt="image"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./footer/img/project-thumb-8.jpg" alt="image"></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./footer/img/project-thumb-9.jpg" alt="image"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-md-3 col-sm-6">
+              <div class="footersec footer-sec footersec contact-footer">
+                <div class="fot-sec-title text-left">
+                  <h2>Contact <span style="color:#f8ae34;">Info</span></h2>
+                    <span class="sfgcolorborder"></span>
+                  </div>
+                  <div class="ftcontact">
+                    <ul>
+                      <li>
+                        <div class="continfo">
+                          <strong style="color:#feb432;">Corp. Office</strong>
+                          <br> A-73 A-Block, Sector - 02 Noida, UP 201301
+                        </div>
+                      </li>
+                      <li>
+                        <div class="continfo">
+                          <strong style="color:#feb432;">Site Office</strong>
+                          <br> Sanfran Ashok City, Near Green Homes
+                          City Police Chowki, Kanpur – Gwalior
+                          By Pass, Jhansi -284001
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fa fa-phone"></i>
+                        <div class="continfo">
+                          <a href="#">+120 4113884</a>
+                        </div>
+                      </li>
+                      <li>
+                        <i class="fa fa-envelope"></i>
+                        <div class="continfo">
+                          <a href="#">info@sanfrangroup.com</a>
+                        </div>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright" style="background-color:#19242a;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-12 cpyrigt" style="font-size:13px; color:#cac8c8;">
+                Copyright © 2019. All rights reserved.
+              </div>
+              <div class="col-md-9 col-sm-12 text-right">
+                <p>RERA Sanfran Ashok City - UPRERAPRJ10375 / Sanfran Ashok Valley  - UPRERAPRJ7244 / CIN No. U70102UP2011PTC107619</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    </body>
+    </html>
+     
+
+   
+  
+    
