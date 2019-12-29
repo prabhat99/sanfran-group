@@ -1,0 +1,1201 @@
+/*
+Theme Name: Cuisine
+Theme URI: http://themeum.com/wordpress/cuisine
+Author: Themeum
+Author URI: http://themeum.com/
+Description: Cuisine Cafe and Resturant Theme.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: right-sidebar, two-columns
+Text Domain: cuisine
+*/
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+@import url('css/bootstrap.min.css');
+@import url('css/font-awesome.css');
+@import url('css/bistro.css');
+@import url('css/montserrat.css');
+@import url('css/merriweather.css');
+@import url('css/main.css');
+@import url('css/responsive.css');
+
+
+.gallery-caption{ }
+.bypostauthor{ }
+.screen-reader-text{ }
+
+/*=================================
+ *=======    Coming Soon    =======
+ *================================= */
+ html {
+  width: 100%;
+  height: 100%;
+ }
+
+.page-template-coming-soon  {
+  width: 100%;
+  height: 100%;
+}
+
+.comingsoon{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.comingsoon-wrap {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.comingsoon-content {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#comingsoon-countdown .countdown-amount{
+  display: block;
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+#comingsoon-countdown .countdown-period{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.comingsoon .sub-page-header{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.comingsoon .soon-page-header {
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 0;
+}
+
+.countdown-days{
+    color:#fff !important;
+}
+.countdown-hours{
+    color:#fff !important;
+}
+.countdown-minutes{
+    color:#fff !important;
+}
+.countdown-seconds{
+    color:#fff !important;
+}
+
+.countdown-section {
+  display: inline-block;
+  margin: 0 60px 0 0;
+  padding: 40px 0 20px 0;
+}
+
+.comingsoon .days, 
+.comingsoon .hours, 
+.comingsoon .minutes, 
+.comingsoon .seconds {
+  display: block;
+  font-size: 60px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.countdown-section:after{
+  position: absolute;
+  content: url(images/coming-soon-count-down.html);
+  top: -55px;
+  left: 30px;
+}
+
+p.comingsoon-message-desc{
+    font-size: 24px;
+    font-weight: 700;
+    /*text-align: center;*/
+}
+.comingsoon > div{
+  display: table;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.social-share ul{
+    margin: 0;
+    padding: 0;
+}
+.comingsoon .social-share ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.comingsoon-footer {
+  margin-top: 90px;
+  margin-bottom: 110px;
+}
+
+.comingsoon .social-share li a {
+    color: rgba(255,255,255,0.7);
+    font-size: 24px;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
+}
+.comingsoon .social-share li a:hover {
+    color: #fff;
+}
+
+.comingsoon-footer .copyright-text {
+  font-size: 14px;
+  color: #999999;
+  margin: 35px 0 0;
+}
+
+/*=================================
+ *=======    404 page   =======
+ *================================= */
+
+.error-page-inner{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.error-code{
+  color: #fff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: inline-block;
+  font-size: 102px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.error-page-inner >div {
+    vertical-align: middle;
+    display: table-cell;
+}
+.error-msg{
+  text-align: center;
+}
+.logo-top{
+
+}
+.error-page-inner .error-msg .logo-top img{
+    /*width: 100%;
+    height: 100%;*/
+    *background-size: cover !important;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body.error404 {
+  background-color: #444;
+}
+.error-message{
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.error-page-inner .btn-primary{
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+.error-page-inner a.btn.btn-primary.btn-lg{
+  font-size: 18px;
+  line-height: 50px;
+  padding: 0 30px;
+  box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.15);
+}
+.error-page-inner a.btn.btn-primary.btn-lg:hover {
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.error-page-inner .error-msg a{
+  border-radius: 1px;
+    border-width: 2px;
+    letter-spacing: 3px;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    transition: color 400ms ease 0s, background-color 400ms ease 0s, border-color 400ms ease 0s;
+    font-weight: normal;
+}
+.info-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+
+/*=================================
+ *=======    Chef Shortcode  =======
+ *================================= */
+
+.cuisine-addon-content{
+  position: relative;
+  z-index: 1;
+}
+.cuisine-chef-designation{
+  font-family: Cookie,sans-serif;
+  font-size: 52px;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.cuisine-chef-title{
+  font-family: Montserrat,sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.cuisine-chef-description{
+  visibility: visible;
+  animation-delay: 200ms;
+  animation-name: fadeInUp;
+  webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.cuisine-chef-signature{
+    visibility: visible;
+    animation-delay: 200ms;
+    animation-name: zoomIn;
+    margin-top: 40px;
+    display: inline-block;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* end of chef css */
+
+
+/*=================================
+ *=======   person-details    =======
+ *================================= */
+.themeum-person{
+
+}
+
+.themeum-person-image{
+  margin-top: 30px;
+}
+
+.img-responsive{
+
+}
+.person-details{
+  background-image: -webkit-linear-gradient(top,transparent 0%,#fff 100%);
+  background-image: -o-linear-gradient(top,transparent 0%,#fff 100%);
+  background-image: linear-gradient(to bottom,transparent 0%,#fff 100%);
+  margin-top: -97px;
+  padding: 7px;
+  position: relative;
+  text-align: center;
+  z-index: 99999;
+}
+.person-title{
+  color: #333;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.person-deg{
+  color: #888;
+  font-size: 16px;
+}
+
+.addon-themeum-title .style-title{
+  font-family: Montserrat;
+  word-wrap: break-word;
+}
+.addon-themeum-title .style-sub-title{
+  word-wrap: break-word;
+}
+
+
+.themeum-title{
+  text-align: center;
+}
+.themeum-title .sub_title_pro{
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
+/*=================================
+ *=======    Client Feedback  =======
+ *================================= */
+
+.owl-controls{
+
+}
+
+.owl-stage-outer{
+  text-align: center;
+  padding-top: 35px;
+}
+
+.owl-nav{margin: 10px auto;width: 100%;}
+.owl-prev{
+  border: 2px solid #666;
+  float: left;
+  margin-right: 5px;
+  padding: 3px 10px;
+  text-align: center;
+}
+.owl-next{
+  border: 2px solid #666;
+  overflow: hidden;
+  padding: 3px;
+  text-align: center;
+}
+
+.client-img-responsive{
+  margin: 0 auto;
+  width: 285px !important;
+  height: 285px !important;
+}
+
+.pro-client-name{
+  margin-bottom: 10px;
+}
+
+
+/*=================================
+ *=======  Contact From     =======
+ *================================= */
+
+.reservation-button{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.tp-generation {
+  width: 100%;
+  border: 2px solid #e9edf0;
+  padding: 12px 10px;
+  border-radius: 3px;
+}
+.tp-generation .wpcf7-form-control-wrap select.wpcf7-form-control {
+  color: #333;
+  width: 100%;
+}
+
+
+
+/* video popup*/
+.video-popup-ab{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.wide {
+  border-bottom: 1px #000 solid;
+  width: 4000px;
+} 
+.fleft { float: left; margin: 0 20px 0 0; }
+
+.cboth { clear: both; }
+      
+
+/* ******************************** */
+/* menu custom class add homepage 2 */
+/* ******************************** */
+.menus-items-hover{
+  padding-top: 40px;
+  padding-bottom: 55px;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+.menus-items-hover:hover{
+  background: rgb(231, 39, 45);
+  border-radius: 4px;
+}
+.menus-items-hover:hover .image {
+  animation: fadeInRight .5s;
+}
+.menus-items-hover:hover .feature-title {
+  animation: fadeInLeft .5s;
+}
+
+/* end */
+
+
+/* ******************************** */
+/*            homepage 3            */
+/* ******************************** */
+.wpb_single_image{
+  -webkit-animation-duration: 1s; 
+  animation-duration: 1s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+  animation-delay: 200ms;
+  animation-name: fadeInRight;
+}
+
+.addon-themeum-title{
+  animation: 0.5s ease 0s normal none 1 running fadeInUp;
+  -webkit-animation-duration: 1s; 
+  animation-duration: 1s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+  animation-delay: 200ms;
+  animation-name: ;
+}
+
+
+
+/* heading title */
+
+.sub-title-inner .leading{
+  font-weight: normal;
+}
+
+/* homepage3 */
+
+.themeum-feature-content .feature-sub-title{
+  line-height: 25px !important;
+}
+
+/*===================================
+* ============ Homepage Three ===========
+=========================================*/
+.vc_tta-color-juicy-pink.vc_tta-style-classic .vc_tta-tab>a{
+  width: 280px !important;
+}
+
+.vc_tta.vc_general .vc_tta-tab>a {
+    padding: 25px 20px !important;
+}
+.vc_tta.vc_general .vc_tta-tab:not(:last-child) >a span:after{
+    content: "";
+    top: 15px;
+    bottom: 15px;
+    background: #fff;
+    right: 0;
+    width: 1px;
+    position: absolute;
+}
+
+.vc_tta-color-juicy-pink.vc_tta-style-classic .vc_tta-tab.vc_active>a {
+    border-color: rgb(56, 56, 71) !important;
+    background-color: rgb(56, 56, 71) !important;
+    color: #fff !important;
+}
+
+.div-padding{
+  margin-right: 60px;
+}
+.find-addon-special-item{
+  margin-top: 60px;
+}
+.addon-special-dishes .find-special-dish-wrapper{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px !important;
+}
+.addon-special-dishes .find-special-dish-wrapper .leading-title{
+backface-visibility: hidden;
+color: #fff;
+font-family: Cookie,sans-serif;
+font-size: 34px;
+font-weight: normal;
+margin-bottom: 0;
+overflow: hidden;
+transform: translateY(0px);
+transition: all 0.4s ease 0s;
+}
+
+.addon-special-dishes .find-special-dish-wrapper .find-content-headings {
+    background-image: linear-gradient(to bottom,transparent 10%, #222 100%);
+    position: absolute;
+    bottom: -95px;
+    font-family: Montserrat;
+    font-weight: normal;
+    left: 0;
+    width: 100%;
+    padding: 0 30px 22px 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 10;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.addon-special-dishes .find-special-dish-wrapper:hover .find-content-headings {
+  bottom: 0px;
+}
+
+.addon-special-dishes .find-special-dish-wrapper .dish-image {
+    width: 100%;
+    max-height: 300px;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms;
+}
+.addon-special-dishes .find-special-dish-wrapper:hover .dish-image{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.addon-special-dishes .find-special-dish-wrapper:hover .find-content-headings .leading {
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    margin-bottom: -20px;
+}
+.addon-special-dishes .find-special-dish-wrapper:hover .find-content-headings .price{
+  margin-top: -36px;
+}
+.addon-special-dishes .find-special-dish-wrapper:hover .find-content-headings .leading-title{
+  opacity: 0;
+}
+.addon-special-dishes .find-special-dish-wrapper .find-content-headings .leading {
+    margin: -4px 0 0 0;
+    padding-bottom: 25px;
+}
+.addon-special-dishes .find-special-dish-wrapper .find-content-headings .leading a{
+    font-size: 24px;
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 40px;
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.addon-special-dishes .find-special-dish-wrapper:hover .find-content-headings .title {
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    margin: 10px 0 0 0;
+    opacity: 1
+}
+
+.addon-special-dishes .find-special-dish-wrapper .find-content-headings .title {
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    -ms-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    opacity: 0
+}
+
+.addon-special-dishes .find-special-dish-wrapper .find-content-headings .price {
+    float: right;
+    margin-top: -50px;
+    font-size: 22px;
+}
+.category-color-wrap .category-color {
+    width: 26px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: none;
+}
+
+/*===============================================
+* ============== Themeum Features ================
+=================================================*/
+
+.feature-product-item-inner{
+    background: #fff;
+    transition: .4s;
+    overflow: hidden;
+    font-family: Montserrat;
+}
+.feature-product-item-inner a{
+  color: #000
+}
+.feature-product-item-inner .feature-product-img img{
+  /*min-height: 330px;*/
+  background-position: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.feature-product-img p {
+  background: #ef0044 none repeat scroll 0 0;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  height: 75px;
+  left: 50%;
+  margin-top: -36px;
+  padding-top: 24px;
+  position: absolute;
+  transform: translate(-50%);
+  width: 75px;
+  z-index: 99999;
+}
+
+.feature-product-item-inner:hover{
+  margin-top: -35px;
+}
+
+.product-details {
+  margin-top: 60px;
+  padding: 0 40px 40px 40px;
+}
+.product-details h4{
+  margin-bottom: 26px;
+}
+.product-details p{
+  color: #777;
+}
+#themeum-classic-product .owl-dot{
+    text-align: center; 
+}
+
+#themeum-classic-product .owl-dot>span {
+    width: 10px;
+    height: 10px; 
+    background: #fff;
+    display: inline-block;
+    border-radius: 30px;
+}
+#themeum-classic-product .owl-dots .active>span{
+  background: #ef0044;
+}
+
+#themeum-classic-product .owl-dots{
+  text-align: center;
+  margin-top: 66px;
+}
+#themeum-classic-product .owl-dots>div {
+   display: inline-block;
+   margin-left: 10px;
+}
+#themeum-classic-product .owl-dot>span>active {
+   background: #e7272d;
+}
+
+.themeum-client-section{}
+.themeum-client-section:hover .themeum-client-image .client-comments-section{
+  color: #fff;
+  transform: scale(1);
+}
+.themeum-client-section:hover .down-store{
+  color: #e7272d;
+  transition: 800ms;
+}
+.themeum-client-section:hover .themeum-client-image{
+  background: #e7272d;
+  border-radius: 4px;
+  color: #fff;
+   transition: 800ms;
+}
+
+.themeum-client-image{
+  padding: 24px;
+}
+.down-store{
+    font-size: 52px;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 35px;
+    color: #fff;
+}
+
+.themeum-client-section .themeum-client-image .icons-tour{
+  color: #eee;
+  font-size: 55px;
+  left: 30px;
+  position: absolute;
+  top: 2px;
+  transition: 800ms;
+}
+.themeum-client-section:hover .themeum-client-image .icons-tour{
+  color: #000;
+  opacity: 0.1;
+}
+
+.themeum-client-image p{
+    z-index: 999;
+    position: relative;
+    font-size: 18px;
+    font-family: Myriad Pro Regular;
+    font-style: italic;
+    color: #383847;
+    font-weight: 100;
+}
+
+
+
+.client-details{
+  padding: 30px;
+}
+.client-details img{
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.client-details h3{
+    padding-top: 30px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 100;
+}
+.client-details p{
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+}
+
+/*=====================================
+* Photo Gallery
+=======================================*/
+
+.conference-area{
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+.conference-area .conference-img {
+    cursor: pointer;
+}
+
+.photo-gallery {
+    height: 225px;
+    margin-bottom: 0;
+}
+
+.conference-img .photo:before {
+    background: rgba(237, 28, 36, 0.85) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin: 0 auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    transition: all 400ms ease 0s;
+    visibility: hidden;
+    width: 100%;
+}
+
+.plus-icon {
+  display: block;
+}
+.gallery-wrapper-content{
+  overflow: hidden !important;
+}
+.no-padding{
+  padding: 0;
+  float: left;
+}
+.plus-icon::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0);
+    -webkit-transition: all 400ms ease 0s;
+    transition: all 400ms ease 0s;
+    visibility: hidden;
+    height: 183px;
+    width: 183px;
+}
+
+.conference-img img {
+    width: 100%;
+    /*min-height: 242px;*/
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+
+.no-padding .conference-img img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    overflow: none;
+    z-index: 9999;
+
+}
+
+.vc_tta-color-juicy-pink.vc_tta-style-classic .vc_tta-tab>a {
+    border-color: #e7272d !important;
+    background-color: #e7272d !important;
+    color: #fff;
+    font-family: Montserrat;
+}
+
+.button-color-code, .vc_btn3.vc_btn3-color-pink{
+    background-color: #e7272d !important;
+    border-radius: 4px !important;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px !important;
+    font-weight: 100;
+    margin: 0 auto;
+    width: 200px;
+}
+.button-color-code, .vc_btn3.vc_btn3-color-pink:hover{
+  background-color: #cf0000 !important;
+}
+
+/*===============================================
+* ============== Homepage Four ================
+=================================================*/
+.themeum-feature-product-item-inner{
+  background: #fff;
+  border-radius: 4px;
+
+}
+.themeum-feature-product-item-inner p{
+  color: #666;
+  font-size: 13px;
+}
+
+.themeum-feature-product-img img{
+  min-height: 364px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.themeum-product-details{
+    padding: 50px 50px 20px 50px;
+    text-align: left;
+
+}
+.themeum-product-details * {
+    color: rgb(56, 56, 71);
+    font-weight: 100;
+  }
+
+.themeum-product-details h2 {
+  font-family: Montserrat;
+  margin: 0 0 25px 0;
+  padding: 0;
+}
+.themeum-product-details h4{
+    font-family: Merriweather;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.themeum-feature-product-img .themeum-product-price{
+    font-family: Montserrat;
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    background: rgb(231, 39, 45);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+#themeum-classic-product-two .owl-dot{
+    text-align: center; 
+}
+
+#themeum-classic-product-two .owl-dot>span {
+    width: 10px;
+    height: 10px; 
+    background: #fff;
+    display: inline-block;
+    border-radius: 30px;
+}
+#themeum-classic-product-two .owl-dots .active>span{
+  background: #ef0044;
+}
+
+#themeum-classic-product-two .owl-dots{
+  text-align: center;
+  margin-top: 66px;
+}
+#themeum-classic-product-two .owl-dots>div {
+   display: inline-block;
+   margin-left: 10px;
+}
+#themeum-classic-product-two .owl-dot>span>active {
+   background: #e32;
+}
+
+
+/*=======================================
+* ========== Coffee Shop Page ===========
+========================================*/
+
+.themeum-special-item{
+  background: #fff none repeat scroll 0 0;
+  text-align: center;
+  border-radius: 4px;
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+.themeum-special-item:hover {
+  background: rgb(231, 39, 45);
+  color: #fff;
+}
+.themeum-special-item:hover .special-item-img{
+  background: rgb(231, 39, 45);
+  transition: .3s;
+  -webkit-transition: .3s;
+}
+.special-item-img{
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    height: 177px;
+    left: 50%;
+    padding: 15px;
+    position: absolute;
+    top: -85px;
+    transform: translate(-50%);
+    width: 177px;
+}
+.special-item-img img{
+    border-radius: 50%;
+    display: inline-flex;
+    height: 150px;
+    position: relative;
+    width: 150px;
+}
+.special-item-details{
+  padding: 110px 38px 50px;
+}
+.special-item-details h3{
+  font-weight: 400;
+  font-size: 20px;
+}
+.themeum-special-item:hover .special-item-details h3{
+  animation: fadeInLeft .5s;
+  color: #fff
+}
+
+.themeum-special-item:hover .special-item-details span{
+  animation: fadeInRight .5s;
+}
+
+
+
+/* ************** WooCommerce Product Slider CSS  ****************** */
+/* ****************************************************************** */
+.shop-area{
+    background: #eaeae0;
+    padding: 137px 0 120px;
+}
+.shop-area .section-title{
+    margin-bottom: 15px;
+}
+.themeum-woo-product-details {
+    margin-top: 22px;
+    min-height: 386px;
+    text-align: center;
+}
+.pro_price_area {
+    color: #a1a198;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.product-img {
+    position: relative;
+}
+.product-img .filled-button {
+    bottom: auto;
+    left: 19px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 180px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    width: 171px;
+    padding: 12px 0;
+    line-height: inherit;
+}
+.product-img img{
+    width: 100%;
+}
+.themeum-woo-product-details h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 16px;
+}
+.themeum-woo-product-details h4 a{
+    color: #000000;
+}
+.themeum-woo-product-details p {
+    color: #a1a198;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.themeum-woo-product-details:hover .product-img img{
+  opacity: .4;
+}
+.themeum-woo-product-details:hover .product-img .filled-button{
+    visibility: visible;
+    opacity: 1;
+    top: 153px;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+.themeum-woo-product-details:hover .product-img .filled-button:hover{
+    background: #e32;
+    color: #fff;
+}
+#product-crousel .col-md-4{
+    width: 100%;
+}
+#product-crousel.owl-theme .owl-controls .owl-nav div {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 0;
+    color: #d1d1c9;
+    display: inline-block;
+    font-size: 30px;
+    margin: 0;
+    opacity: 1;
+    padding: 0;
+}
+#product-crousel.owl-theme .owl-controls .owl-nav div:hover{
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+#product-crousel.owl-theme .owl-controls {
+    margin-top: 0;
+    text-align: center;
+    position: relative;
+}
+#product-crousel.owl-theme .owl-controls .owl-nav .owl-prev{
+    position: absolute;
+    top: -235px;
+    left: -70px;
+    padding-top: 6px;
+    background: #fafafa;
+    border: none;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 2px;
+    color: #ed1c24;
+    font-weight: bold;
+}
+#product-crousel.owl-theme .owl-controls .owl-nav .owl-next{
+    position: absolute;
+    top: -235px;
+    right: -70px;
+    padding-top: 6px;
+    background: #fafafa;
+    border: none;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 2px;
+    color: #ed1c24;
+    font-weight: bold;
+
+}
+#product-crousel.owl-theme .owl-controls .owl-nav .owl-next:hover, #product-crousel.owl-theme .owl-controls .owl-nav .owl-prev:hover{
+  background-color: rgb(237, 28, 36);
+  color: #fff;
+}
+.added_to_cart{
+    position: absolute;
+    top: auto;
+    visibility: hidden;
+    bottom: 80px;
+    right: 120px;
+}
+.product-img:hover .added_to_cart{
+    visibility: visible;
+}
+.woocommerce .products .star-rating {
+  margin: 15px auto 20px;
+}
+/* ************************ Shop area End  ************************ */
+/* **************************************************************** */

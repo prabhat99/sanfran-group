@@ -8,18 +8,16 @@
 }-->
 
 {%load static%}
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+    
 
       <style>
         footer{
           display: block;
         }
+
+  .footer-padding{
+    margin: 35px 0px 0px;
+  }
 
       
  h2{
@@ -52,7 +50,7 @@
 
     .footer1 {
       background: #273238  center center no-repeat;
-      background-image: url("../partials/footer/img/map.png");
+      background-image: url({%static './img/footer/map.png'%});
       padding: 50px 0 0;
       clear: both;
       background-size: 100%;
@@ -115,9 +113,7 @@ img {
     width: 26px;
     margin-right: 0;
 }
-.ftcontact li i.fa-envelope-o {
-    font-size: 16px;
-}
+
 .footersec .social li {
     display: inline-block;
 }
@@ -141,12 +137,7 @@ img {
     color: #fff;
 }
 
-.fa-facebook-f:before, .fa-facebook:before {
-    content: "\f09a";
-    webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 .fot-sec-title h2 {
     color: #fff;
@@ -234,9 +225,8 @@ p {
 }
       </style>
 
-    </head>
-    <body>
-      <footer class="footer1">
+    
+      <footer class="footer1 footer-padding">
         <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -247,7 +237,7 @@ p {
                   <span class="sfgcolorborder"></span>
                 </div>
                 <a class="ftlogo" href="#">
-                  <img alt="Awesome Image" src="">
+                  <img alt="Awesome Image" src="{%static './img/footer/logo-footer.png'%}">
                 </a>
                 <p style="text-align-last: left;">Sanfran group a conglomerate of multinational companies. Which operates in real estate, hospitality health..... 
                   <a href="{%url 'about'%}" style="color:#f8ae34;">Read More</a>
@@ -294,11 +284,11 @@ p {
                   </li>
                   <li>
                     <i class="fa fa-angle-double-right"></i>
-                    <a href="{%url 'projects'%}">Projects</a>
+                    <a href="#">Projects</a>
                   </li>
                   <li>
                     <i class="fa fa-angle-double-right"></i>
-                    <a href="{%url 'corporate-profile'%}">corporate-profile</a>
+                    <a href="#">corporate-profile</a>
                   </li>
                   <li>
                     <i class="fa fa-angle-double-right"></i>
@@ -332,40 +322,40 @@ p {
                   <ul>
                     <li>
                       <a href="#">
-                        <img src="{%static '/static/img/project-thumb-1.jpg'%}" alt="image">
+                        <img src="{%static './img/footer/project-thumb-1.jpg'%}" alt="image">
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="./footer/img/project-thumb-2.jpg" alt="image">
+                        <img src="{%static './img/footer/project-thumb-2.jpg'%}" alt="image">
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <img src="./footer/img/project-thumb-3.jpg" alt="image">
+                        <img src="{%static './img/footer/project-thumb-3.jpg'%}" alt="image">
                       </a>
                     </li>
                     <li>
                     <a href="#">
-                      <img src="./footer/img/project-thumb-4.jpg" alt="image">
+                      <img src="{%static './img/footer/project-thumb-4.jpg'%}" alt="image">
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <img src="./footer/img/project-thumb-5.jpg" alt="image">
+                      <img src="{%static './img/footer/project-thumb-5.jpg'%}" alt="image">
                     </a>
                   </li>
                   <li>
-                    <a href="#"><img src="./footer/img/project-thumb-6.jpg" alt="image"></a>
+                    <a href="#"><img src="{%static './img/footer/project-thumb-6.jpg'%}" alt="image"></a>
                   </li>
                   <li>
-                    <a href="#"><img src="./footer/img/project-thumb-7.jpg" alt="image"></a>
+                    <a href="#"><img src="{%static './img/footer/project-thumb-7.jpg'%}" alt="image"></a>
                   </li>
                   <li>
-                    <a href="#"><img src="./footer/img/project-thumb-8.jpg" alt="image"></a>
+                    <a href="#"><img src="{%static './img/footer/project-thumb-8.jpg'%}" alt="image"></a>
                   </li>
                   <li>
-                    <a href="#"><img src="./footer/img/project-thumb-9.jpg" alt="image"></a>
+                    <a href="#"><img src="{%static './img/footer/project-thumb-9.jpg'%}" alt="image"></a>
                   </li>
                 </ul>
               </div>
@@ -425,9 +415,7 @@ p {
         </div>
       </footer>
     
-    </body>
-    </html>
-     
+    
 
    
   

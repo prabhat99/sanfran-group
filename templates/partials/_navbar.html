@@ -12,14 +12,16 @@
 }
 .primary_nav_wrap ul a
 {
-	display:block;
+	display:inline-grid;
 	color:#333;
 	text-decoration:none;
 	font-weight:700;
 	font-size:12px;
-	line-height:32px;
-	padding:0 15px;
+	line-height:35px;
+  padding-left:10px;
+  padding-right:60px;
   font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+  white-space: nowrap;
 }
 
 .primary_nav_wrap ul li
@@ -27,7 +29,7 @@
 	position:relative;
 	float:left;
   padding:0;
-  margin:0;
+  margin :0;
 }
 
 .primary_nav_wrap ul ul
@@ -37,28 +39,34 @@
 	top:100%;
 	left:0;
 	background:#fff;
-	padding:0;
+  padding:0;
+  
 }
 
 .primary_nav_wrap ul li:hover > ul
 {
   display:block;
+ 
 }
 
 .primary_nav_wrap ul ul li:hover{
   background-color: #fbaf3f;
+  overflow: hidden;
 }
 
 .sanfran-logo{
-  width:80px;
+  display: block;
+    max-width: 75%;
+    height: auto
 }
+
  </style>
  
  <!-- Navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" >
         <div class="container">
           <a class="navbar-brand" href="{%url 'index'%}">
-            <img src="/static/img/logo.png" class="logo" alt="">
+            <img src="{%static './img/sml-logo02.png'%}" class="sanfran-logo" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
             <span class="navbar-toggler-icon"></span>

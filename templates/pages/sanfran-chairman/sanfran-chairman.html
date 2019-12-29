@@ -3,6 +3,17 @@
 {% block content%}
 
 <style>
+    .sub-title {
+    background-color: #333;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    text-align: center;
+    padding: 180px 0 100px;
+    margin-bottom: 10px;
+
+}
 
 .sub-title-inner h2.page-leading {
     color: #ffffff;
@@ -26,7 +37,7 @@ h2 {
 }
 .chairman-profie {
     text-align: center;
-    background: #ffffff url("{%static '/static/img/sanfran-chairman/sketch.jpg'%}") bottom right no-repeat;
+    background: #ffffff url("/static/img/sanfran-chairman/sketch.jpg") bottom right no-repeat;
     padding: 25px 0px 25px;
 }
 section{
@@ -68,7 +79,7 @@ section{
 
 
 <section id="main">
-    <div class="sub-title" style="background-image:url({%static './computer-2048166_1920.jpg'%});background-size: cover;background-position: 50% 50%;">
+    <div class="sub-title" style="background-image:url({%static './img/sanfran-chairman/computer-2048166_1920.jpg'%}); background-size: cover;background-position: 50% 50%;">
         <div class="sub-title-inner">
             <div class="container">
                 <div class="row">
@@ -85,7 +96,7 @@ section{
                 <div class="row">
                     <div class="col-md-4">
                         <div class="sanfran">
-                            <img src="{%static '/static/img/sanfran-chairman/Pandiyan_Ji.png'}" alt="Pandiyan_Ji" class="img-responsive">
+                            <img src="{%static './img/sanfran-chairman/Pandiyan_Ji.png'%}" alt="Pandiyan_Ji" class="img-responsive">
                             <h4>MR. M.B PANDIYAN</h4>
                             <span>Chairman &amp; WTD, Sanfran Group</span>
                         </div>
